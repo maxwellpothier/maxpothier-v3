@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'Kayak';
+    src: url("../public/fonts/Kayak\ Sans\ Regular.otf") format("opentype");
+}
+@font-face {
+    font-family: 'Liquido';
+    src: url("../public/fonts/LIQUIDO-Fluid.otf") format("opentype");
+}
+@font-face {
+    font-family: 'Alfa Slab';
+    src: url("../public/fonts/AlfaSlabOne-Regular.otf") format("opentype");
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url("../public/fonts/OpenSans-VariableFont_wdth\,wght.otf") format("opentype");
+}
+
+html,
+body {
+	padding: 0;
+  	margin: 0;
+  	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    	Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	background-color: #EAD6CD;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}

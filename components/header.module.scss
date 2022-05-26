@@ -1,0 +1,60 @@
+@import "styles/colors";
+
+.headerContainer {
+    background-color: $indigo;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+	margin-bottom: 50px;
+}
+
+.headerLogoMobile {
+    font-family: "Liquido";
+    font-size: 48px;
+    letter-spacing: 5px;
+    color: $anakiwa;
+    align-self: center;
+}
+
+.headerLogo {
+    display: none;
+}
+
+.headerSocialIcons {
+    display: grid;
+    grid-template-columns: repeat(3, 30px);
+    gap: 8px;
+    align-items: center;
+}
+
+.headerIcon {
+    font-size: 24px;
+    color: $anakiwa;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+@media only screen and (min-width: 469px) {
+    .headerLogoMobile {
+        display: none;
+    }
+
+    .headerLogo {
+        display: flex;
+        font-family: "Liquido";
+        font-size: 48px;
+        letter-spacing: 5px;
+        color: $anakiwa;
+        align-self: center;
+		cursor: pointer;
+    }
+}
+
+// @media only screen and (min-width: 768px) {
+//     .headerContainer {
+//         padding: 0 35px;
+//     }
+// }
