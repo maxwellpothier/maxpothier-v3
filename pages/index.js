@@ -8,7 +8,9 @@ const HomePage = () => {
 	return (
 		<Theme>
 			<PageTitle title={"Blog"} subtitle={"Recent Posts"}/>
-			<PostsList/>
+			<div>
+				<PostsList/>
+			</div>
 		</Theme>
 	);
 };

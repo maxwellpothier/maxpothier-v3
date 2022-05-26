@@ -1,6 +1,8 @@
+import styles from "./postsList.module.scss";
+
 const PostsList = () => {
 	return (
-		<div>
+		<div className={styles.postsListContainer}>
 			Posts List
 		</div>
 	);
