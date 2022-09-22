@@ -1,12 +1,13 @@
 import {useForm} from "react-hook-form";
+import {auth} from "../lib/mutations";
 
 import styles from "./signup.module.scss";
 
 const Signup = () => {
 	const hookForm = useForm();
 
-	const onSubmit = ({username, firstName, lastName, password}) => {
-		console.log(username, firstName, lastName, password);
+	const onSubmit = async ({username, firstName, lastName, password}) => {
+		const user = await auth("signup", {username, firstName, lastName, password});
 	};
 
 	return (
