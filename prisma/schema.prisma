@@ -39,5 +39,7 @@ model Post {
 	updatedAt DateTime @updatedAt
 	title String @unique
 	subtitle String
+	score Int
+	content String
 	album Album?
 }

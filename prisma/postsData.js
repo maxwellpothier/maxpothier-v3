@@ -2,6 +2,8 @@ const postsData = [
 	{
 		title: "Turn On the Bright Lights",
 		subtitle: "Test subtitle",
+		score: 8,
+		content: "Great album",
 		album: {
 			title: "Turn On the Bright Lights",
 			artist: "Interpol",
@@ -12,6 +14,8 @@ const postsData = [
 	{
 		title: "Kid A",
 		subtitle: "Test subtitle",
+		score: 8,
+		content: "Great album",
 		album: {
 			title: "Kid A",
 			artist: "Radiohead",
@@ -22,6 +26,8 @@ const postsData = [
 	{
 		title: "Is This It",
 		subtitle: "Test subtitle",
+		score: 8,
+		content: "Great album",
 		album: {
 			title: "Is This It",
 			artist: "The Strokes",
@@ -32,6 +38,8 @@ const postsData = [
 	{
 		title: "Doolittle",
 		subtitle: "Test subtitle",
+		score: 8,
+		content: "Great album",
 		album: {
 			title: "Doolittle",
 			artist: "Pixies",
@@ -42,6 +50,8 @@ const postsData = [
 	{
 		title: "Teen Dream",
 		subtitle: "Test subtitle",
+		score: 8,
+		content: "Great album",
 		album: {
 			title: "Teen Dream",
 			artist: "Beach House",
@@ -52,6 +62,8 @@ const postsData = [
 	{
 		title: "InnerSpeaker",
 		subtitle: "Test subtitle",
+		score: 8,
+		content: "Great album",
 		album: {
 			title: "InnerSpeaker",
 			artist: "Tame Impala",
@@ -62,6 +74,8 @@ const postsData = [
 	{
 		title: "Sound of Silver",
 		subtitle: "Test subtitle",
+		score: 8,
+		content: "Great album",
 		album: {
 			title: "Sound of Silver",
 			artist: "LCD Soundsystem",
@@ -72,6 +86,8 @@ const postsData = [
 	{
 		title: "Drukqs",
 		subtitle: "Test subtitle",
+		score: 8,
+		content: "Great album",
 		album: {
 			title: "Drukqs",
 			artist: "Aphex Twin",

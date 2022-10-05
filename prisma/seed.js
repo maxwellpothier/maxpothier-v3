@@ -12,6 +12,8 @@ const run = async () => {
 			create: {
 				title: post.title,
 				subtitle: post.subtitle,
+				score: post.score,
+				content: post.content,
 				album: {
 					create: {
 						title: post.album.title,
