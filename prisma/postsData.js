@@ -6,7 +6,7 @@ const postsData = [
 			title: "Turn On the Bright Lights",
 			artist: "Interpol",
 			year: 2002,
-			artwork: "",
+			artwork: "https://i.scdn.co/image/ab67616d0000b27314f8df9fb9c2d3056a994390",
 		}
 	},
 	{
@@ -16,7 +16,7 @@ const postsData = [
 			title: "Kid A",
 			artist: "Radiohead",
 			year: 2000,
-			artwork: "",
+			artwork: "https://i.scdn.co/image/ab67616d0000b2736c7112082b63beefffe40151",
 		}
 	},
 	{
@@ -26,7 +26,7 @@ const postsData = [
 			title: "Is This It",
 			artist: "The Strokes",
 			year: 2001,
-			artwork: "",
+			artwork: "https://i.scdn.co/image/ab67616d0000b27313f2466b83507515291acce4",
 		}
 	},
 	{
@@ -36,7 +36,7 @@ const postsData = [
 			title: "Doolittle",
 			artist: "Pixies",
 			year: 1989,
-			artwork: "",
+			artwork: "https://i.scdn.co/image/ab67616d0000b273cafe9404f872e4c0e91a8cc8",
 		}
 	},
 	{
@@ -46,7 +46,7 @@ const postsData = [
 			title: "Teen Dream",
 			artist: "Beach House",
 			year: 2010,
-			artwork: "",
+			artwork: "https://i.scdn.co/image/ab67616d0000b2739ba6a1b973e91955ab23c50",
 		}
 	},
 	{
@@ -56,7 +56,7 @@ const postsData = [
 			title: "InnerSpeaker",
 			artist: "Tame Impala",
 			year: 2010,
-			artwork: "",
+			artwork: "https://i.scdn.co/image/ab67616d0000b273176e82d09ac75d62810f0056",
 		}
 	},
 	{
@@ -66,7 +66,7 @@ const postsData = [
 			title: "Sound of Silver",
 			artist: "LCD Soundsystem",
 			year: 2007,
-			artwork: "",
+			artwork: "https://i.scdn.co/image/ab67616d0000b273e6272ad26e7a55bc342a6dd0",
 		}
 	},
 	{
@@ -76,7 +76,7 @@ const postsData = [
 			title: "Drukqs",
 			artist: "Aphex Twin",
 			year: 2001,
-			artwork: "",
+			artwork: "https://i.scdn.co/image/ab67616d0000b273a5aef98a1762d0f64bb6ed9a",
 		}
 	},
 ];
