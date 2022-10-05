@@ -19,7 +19,6 @@ model User {
 	password String
 	firstName String
 	lastName String
-	listenLists ListenLater[]
 }
 
 model Album {
@@ -32,7 +31,6 @@ model Album {
 	artwork String
 	post Post @relation(fields: [postId], references: [id])
 	postId Int @unique
-	listenLists ListenLater[]
 }
 
 model Post {
@@ -42,14 +40,4 @@ model Post {
 	title String @unique
 	subtitle String
 	album Album?
-}
-
-model ListenLater {
-	id Int @id @default(autoincrement())
-	createdAt DateTime @default(now())
-	updatedAt DateTime @updatedAt
-	name String
-	albums Album[]
-	user User @relation(fields: [userId], references: [id])
-	userId Int
 }
