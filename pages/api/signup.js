@@ -38,7 +38,7 @@ export default async function handler(req, res) {
 
 	res.setHeader(
 		"Set-Cookie",
-		cookie.serialize("WT-ACCESS-TOKEN", token, {
+		cookie.serialize("WT_ACCESS_TOKEN", token, {
 			httpOnly: true,
 			maxAge: 8 * 60 * 60,
 			path: "/",
