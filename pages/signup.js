@@ -1,12 +1,19 @@
+import { useRouter } from "next/router";
 import {useForm} from "react-hook-form";
+import { useSWRConfig } from "swr";
+import { auth } from "../lib/mutations";
 
 import styles from "./signup.module.scss";
 
+
 const Signup = () => {
 	const hookForm = useForm();
+	const router = useRouter();
 
-	const onSubmit = async ({username, firstName, lastName, password}) => {
-		console.log(username, firstName, lastName, password);
+	const onSubmit = async (newUserData) => {
+		console.log(newUserData);
+		await auth("signup", newUserData);
+		// router.push("/");
 	};
 
 	return (
@@ -14,8 +21,8 @@ const Signup = () => {
 			Signup Page
 			<form onSubmit={hookForm.handleSubmit(onSubmit)} className={styles.signupForm}>
 				<input
-					{...hookForm.register("username")}
-					placeholder={"Username"}
+					{...hookForm.register("email")}
+					placeholder={"Email"}
 				/>
 				<input
 					{...hookForm.register("firstName")}
