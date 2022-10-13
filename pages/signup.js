@@ -11,9 +11,10 @@ const Signup = () => {
 	const router = useRouter();
 
 	const onSubmit = async (newUserData) => {
-		console.log(newUserData);
-		await auth("signup", newUserData);
-		// router.push("/");
+		const user = await auth("signup", newUserData);
+		if (user.ok) {
+			router.push("/")
+		};
 	};
 
 	return (

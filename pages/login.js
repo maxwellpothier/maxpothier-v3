@@ -9,8 +9,10 @@ const Login = () => {
 	const router = useRouter();
 
 	const onSubmit = async (userData) => {
-		await auth("login", userData);
-		await router.push("/");
+		const user = await auth("login", userData);
+		if (user.ok) {
+			router.push("/")
+		};
 	};
 
 	return (
