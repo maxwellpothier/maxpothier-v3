@@ -17,19 +17,26 @@ const Login = () => {
 
 	return (
 		<div>
-			Login Page
-			<form onSubmit={hookForm.handleSubmit(onSubmit)} className={styles.loginForm}>
-				<input
-					{...hookForm.register("email")}
-					placeholder={"Email"}
-				/>
-				<input
-					{...hookForm.register("password")}
-					placeholder={"Password"}
-					type={"password"}
-				/>
-				<button type={"submit"}>Log In</button>
-			</form>
+			<div className={styles.loginFormOuterBox}>
+				What's Turning
+				<div className={styles.loginFormInnerBox}>
+					<form onSubmit={hookForm.handleSubmit(onSubmit)} className={styles.loginForm}>
+						<input
+							className={styles.formInputField}
+							{...hookForm.register("email")}
+							placeholder={"Email"}
+							type={"email"}
+						/>
+						<input
+							className={styles.formInputField}
+							{...hookForm.register("password")}
+							placeholder={"Password"}
+							type={"password"}
+						/>
+						<button type={"submit"}>Log In</button>
+					</form>
+				</div>
+			</div>
 		</div>
 	);
 };
