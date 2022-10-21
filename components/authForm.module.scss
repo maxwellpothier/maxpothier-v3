@@ -45,6 +45,7 @@
 	flex-direction: column;
 	gap: 5px;
 	font-size: 12px;
+	font-family: "Open Sans";
 }
 
 .signupLink {
@@ -58,7 +59,7 @@
 	background-color: $indigo;
 	border: none;
 	border-radius: 3px;
-	color: white;
+	color: $white;
 	font-family: "Alfa Slab";
 	font-size: 17px;
     letter-spacing: 1px;
