@@ -6,6 +6,11 @@ import cookie from "cookie";
 export default async function handler(req, res) {
 	const {email, password} = req.body;
 
+	if (email === "" || password === "") {
+		res.status(401);
+		res.json({error: "Email or password is wrong"});
+	}
+
 	const user = await prisma.user.findUnique({
 		where: {
 			email,

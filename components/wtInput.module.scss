@@ -1,0 +1,9 @@
+.formInputField {
+	width: 100%;
+	margin-bottom: 20px;
+	height: 30px;
+	padding: 6px;
+	&:focus {
+		outline: none;
+	}
+}

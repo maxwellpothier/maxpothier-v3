@@ -1,46 +1,57 @@
 import { useRouter } from "next/router";
 import {useForm} from "react-hook-form";
 import { useSWRConfig } from "swr";
+import WTInput from "../components/WTInput";
+import AuthForm from "../components/AuthForm";
 import { auth } from "../lib/mutations";
-
-import styles from "./signup.module.scss";
-
 
 const Signup = () => {
 	const hookForm = useForm();
 	const router = useRouter();
 
 	const onSubmit = async (newUserData) => {
-		const user = await auth("signup", newUserData);
-		if (user.ok) {
-			router.push("/")
-		};
+		try {
+			const user = await auth("signup", newUserData);
+			router.push("/");
+		} catch {
+			alert("Email already has a registered account.");
+		}
+	};
+
+	const buttonAreaContent = {
+		ctaText: "Already have an account?",
+		linkText: "Login",
+		buttonText: "Signup",
+		linkHref: "/login",
 	};
 
 	return (
-		<div>
-			Signup Page
-			<form onSubmit={hookForm.handleSubmit(onSubmit)} className={styles.signupForm}>
-				<input
-					{...hookForm.register("email")}
-					placeholder={"Email"}
-				/>
-				<input
-					{...hookForm.register("firstName")}
-					placeholder={"First Name"}
-				/>
-				<input
-					{...hookForm.register("lastName")}
-					placeholder={"Last Name"}
-				/>
-				<input
-					{...hookForm.register("password")}
-					placeholder={"Password"}
-					type={"password"}
-				/>
-				<button type={"submit"}>Sign Up</button>
-			</form>
-		</div>
+		<AuthForm onSubmit={onSubmit} hookForm={hookForm} buttonAreaContent={buttonAreaContent}>
+			<WTInput
+				name={"email"}
+				type={"email"}
+				placeholder={"Email"}
+				hookForm={hookForm}
+			/>
+			<WTInput
+				name={"firstName"}
+				type={"firstName"}
+				placeholder={"First Name"}
+				hookForm={hookForm}
+			/>
+			<WTInput
+				name={"lastName"}
+				type={"lastName"}
+				placeholder={"Last Name"}
+				hookForm={hookForm}
+			/>
+			<WTInput
+				name={"password"}
+				type={"password"}
+				placeholder={"Password"}
+				hookForm={hookForm}
+			/>
+		</AuthForm>
 	);
 };
 
