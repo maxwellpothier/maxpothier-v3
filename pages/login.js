@@ -9,10 +9,12 @@ const Login = () => {
 	const router = useRouter();
 
 	const onSubmit = async (userData) => {
-		const user = await auth("login", userData);
-		if (!!user) {
+		try {
+			const user = await auth("login", userData);
 			router.push("/");
-		};
+		} catch (err) {
+			alert("Your email or password was not found.");
+		}
 	};
 
 	const buttonAreaContent = {
