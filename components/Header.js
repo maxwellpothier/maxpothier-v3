@@ -2,13 +2,14 @@ import styles from "./header.module.scss"
 
 import Link from 'next/link';
 import {FaSpotify, FaGithub, FaTwitter} from 'react-icons/fa';
+import WTLogo from "./WTLogo";
 
 const Header = () => {
 	return (
         <div className={styles.headerContainer}>
-            <Link href={"/"} passHref>
-                <span className={styles.headerLogo}>What&apos;s Turning?</span>
-            </Link>
+			<Link href={"/"} passHref>
+				<WTLogo/>
+			</Link>
             <Link href={"/"} passHref>
                 <span className={styles.headerLogoMobile}>WT?</span>
             </Link>

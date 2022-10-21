@@ -1,21 +1,72 @@
+@import "styles/colors";
+
 .loginFormOuterBox {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	margin: 0 10px;
-	border: 3px solid blue;
+	background-color: $indigo;
 	margin-top: 200px;
+	border-radius: 5px;
+	padding-top: 8px;
+	max-width: 400px;
 }
 
 .loginFormInnerBox {
-	border: 3px solid red;
+	background-color: $foam;
 	margin: 10px;
+	border-radius: 5px;
 }
 
 .loginForm {
 	display: flex;
 	flex-direction: column;
-	gap: 30px;
-	margin: 10px;
+	margin: 20px 10px 10px 10px;
 }
 
 .formInputField {
 	width: 100%;
+	margin-bottom: 20px;
+	height: 30px;
+	padding: 6px;
+	&:focus {
+		outline: none;
+	}
+}
+
+.buttonAreaContainer {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+.moreInfo {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	font-size: 12px;
+}
+
+.signupLink {
+	color: $indigo;
+	text-decoration: underline;
+}
+
+.formSubmitButton {
+	width: 90px;
+	height: 30px;
+	background-color: $indigo;
+	border: none;
+	border-radius: 3px;
+	color: white;
+	font-family: "Alfa Slab";
+	font-size: 17px;
+    letter-spacing: 1px;
+}
+
+@media only screen and (min-width: 420px) {
+	.loginFormOuterBox {
+		margin: 0 auto;
+		margin-top: 200px;
+	}
 }

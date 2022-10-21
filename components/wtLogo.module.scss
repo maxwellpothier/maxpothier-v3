@@ -1,0 +1,11 @@
+@import "styles/colors";
+
+.fullLogo {
+	display: flex;
+	font-family: "Liquido";
+	font-size: 48px;
+	letter-spacing: 5px;
+	color: $anakiwa;
+	align-self: center;
+	cursor: pointer;
+}
