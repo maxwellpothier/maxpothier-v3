@@ -10,10 +10,12 @@ const Signup = () => {
 	const router = useRouter();
 
 	const onSubmit = async (newUserData) => {
-		const user = await auth("signup", newUserData);
-		if (user.ok) {
-			router.push("/")
-		};
+		try {
+			const user = await auth("signup", newUserData);
+			router.push("/");
+		} catch {
+			alert("Email already has a registered account.");
+		}
 	};
 
 	const buttonAreaContent = {
