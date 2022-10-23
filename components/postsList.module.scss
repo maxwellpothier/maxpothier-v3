@@ -1,6 +1,10 @@
+.pageContainer {
+	max-width: 1200px;
+}
+
 .postsListContainer {
-	// border: 1px solid red;
 	display: flex;
 	justify-content: center;
-	max-width: 700px;
+	flex-wrap: wrap;
+	margin: auto;
 }
