@@ -8,7 +8,9 @@ const Header = () => {
 	return (
         <div className={styles.headerContainer}>
 			<Link href={"/"} passHref>
-				<WTLogo/>
+				<div className={styles.headerLogo}>
+					<WTLogo/>
+				</div>
 			</Link>
             <Link href={"/"} passHref>
                 <span className={styles.headerLogoMobile}>WT?</span>
